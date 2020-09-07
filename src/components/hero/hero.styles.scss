@@ -39,7 +39,31 @@
   }
 
   &__img-column {
+    position: relative;
     width: 430px;
     padding: 50px 50px;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 232px;
+      height: 176px;
+      top: 0;
+      left: 0;
+      background-image: url(./line-top.png);
+      z-index: -1;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 232px;
+      height: 176px;
+      bottom: 0;
+      right: 0;
+      background-image: url(./line-bottom.png);
+      z-index: -1;
+    }
   }
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './hero.styles.scss';
 import hero from './hero.jpg';
+import lineTop from './line-top.png';
+import lineBottom from './line-bottom.png';
 const newUrl = 'new-collection';
 const ImageDimensions = {
   'WIDTH': 430,
