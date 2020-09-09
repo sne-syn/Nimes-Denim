@@ -57,13 +57,13 @@
     &::before {
       top: 0;
       left: 0;
-      background-image: url(./line-top.png);
+      background-image: url(./img/line-top.png);
     }
 
     &::after {
       bottom: 0;
       right: 0;
-      background-image: url(./line-bottom.png);
+      background-image: url(./img/line-bottom.png);
     }
   }
 }

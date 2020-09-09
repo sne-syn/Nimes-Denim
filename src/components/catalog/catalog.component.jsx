@@ -1,10 +1,10 @@
 import React from 'react';
 import './catalog.styles.scss';
 import CatalogItem from './../catalog_item/catalog_item.component';
-import jackets from './jackets.jpg';
-import jeans from './jeans.jpg';
-import shirts from './shirts.jpg';
-import overalls from './overalls.jpg';
+import jackets from './img/jackets.jpg';
+import jeans from './img/jeans.jpg';
+import shirts from './img/shirts.jpg';
+import overalls from './img/overalls.jpg';
 
 class Catalog extends React.Component {
   constructor() {

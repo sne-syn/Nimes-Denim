@@ -1,6 +1,6 @@
 import React from 'react';
 import './news.styles.scss';
-import news from './news.jpg';
+import news from './img/news.jpg';
 
 const newsUrl = 'news';
 const ImageDimensions = {
