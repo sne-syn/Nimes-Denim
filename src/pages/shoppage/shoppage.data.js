@@ -9,7 +9,6 @@ import shirt1 from './img/shirt1.jpg';
 import shirt2 from './img/shirt2.jpg';
 import shirt3 from './img/shirt3.jpg';
 import shirt4 from './img/shirt4.jpg';
-import shirt5 from './img/shirt5.jpg';
 //
 import jacket1 from './img/jacket1.jpg';
 import jacket2 from './img/jacket2.jpg';
@@ -103,12 +102,6 @@ const SHOP_DATA = [{
         name: 'Lee Jeans',
         imageUrl: shirt4,
         price: 120
-      },
-      {
-        id: 5,
-        name: 'Pepe Jeans',
-        imageUrl: shirt5,
-        price: 110
       }
     ]
   },

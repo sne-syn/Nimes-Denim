@@ -4,18 +4,23 @@ import GoodsItem from './../goods_item/goods_item.component';
 
 const Goods = ({ title, items }) => {
   return (
-    <div className='goods'>
-      <h1 className='goods__title'>{title.toUpperCase()}</h1>
-      <div className='preview__item'>
-        {
-          items.filter((item, idx) => idx < 4).map(({ id, ...itemProps }) => {
-            return (
-              <GoodsItem key={id} {...itemProps} />
-            )
-          })
-        }
+    <li className='goods'>
+      <div className='wrapper'>
+        <header className='goods__header'>
+          <h2 className='goods__title'>{title}</h2>
+          <span className="goods__show-more">View all</span>
+        </header>
+        <ul className='goods__list'>
+          {
+            items.filter((item, idx) => idx < 4).map(({ id, ...itemProps }) => {
+              return (
+                <GoodsItem key={id} {...itemProps} />
+              )
+            })
+          }
+        </ul>
       </div>
-    </div>
+    </li>
   )
 }
 

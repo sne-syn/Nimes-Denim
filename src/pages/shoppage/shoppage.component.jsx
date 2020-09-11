@@ -15,15 +15,16 @@ class ShopPage extends React.Component {
   render() {
     const { collections } = this.state;
     return (
-      <div className='shop-page'>
-        <div className='wrapper'>
-          {
-            collections.map(({ id, ...otherGoodsProps }) => (
-              <Goods key={id} {...otherGoodsProps} />
-            ))
-          }
-        </div>
-      </div>
+      <section className='shoppage'>
+          <h1 className='visually-hidden'>All categories</h1>
+          <ul>
+            {
+              collections.map(({ id, ...otherGoodsProps }) => (
+                <Goods key={id} {...otherGoodsProps} />
+              ))
+            }
+          </ul>
+      </section>
     )
   }
 }
