@@ -1,12 +1,12 @@
 import React from 'react';
-import './catalog.styles.scss';
-import CatalogItem from './../catalog_item/catalog_item.component';
+import './category.styles.scss';
+import CategoryItem from './../category_item/category_item.component';
 import jackets from './img/jackets.jpg';
 import jeans from './img/jeans.jpg';
 import shirts from './img/shirts.jpg';
 import overalls from './img/overalls.jpg';
 
-class Catalog extends React.Component {
+class Category extends React.Component {
   constructor() {
     super();
 
@@ -43,15 +43,15 @@ class Catalog extends React.Component {
 
   render() {
     return (
-      <section className='catalog'>
+      <section className='category'>
         <div className='wrapper'>
-          <header className='catalog__header'>
-            <h2 className='catalog__title'>Shop by category</h2>
-            <a className="catalog__show-more" href="catalog.html">View all</a>
+          <header className='category__header'>
+            <h2 className='category__title'>Shop by category</h2>
+            <a className="category__show-more" href="category.html">View all</a>
           </header>
-          <ul className='catalog__list'>
+          <ul className='category__list'>
             {this.state.sections.map(({ title, image, id, linkUrl }) => (
-              <CatalogItem key={id} title={title} image={image} link={linkUrl} />
+              <CategoryItem key={id} title={title} image={image} link={linkUrl} />
             ))}
           </ul>
         </div>
@@ -60,4 +60,4 @@ class Catalog extends React.Component {
   }
 }
 
-export default Catalog;
+export default Category;
