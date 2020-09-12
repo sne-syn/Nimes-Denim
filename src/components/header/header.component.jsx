@@ -8,7 +8,7 @@ const Header = () => {
     <header className='main-header'>
       <nav class='main-header__nav'>
         <div className='wrapper'>
-          <div class="main-header-nav-wrapper">
+          <div class="main-header__nav-wrapper">
             <ul className='site-navigation'>
               <li className='site-navigation__item'>
                 <BrowserRouter>

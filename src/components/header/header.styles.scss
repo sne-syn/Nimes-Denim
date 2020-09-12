@@ -1,6 +1,13 @@
-.main-header__logo {
-  padding: 25px 0 20px;
-  margin: auto;
+.main-header {
+  &__logo {
+    padding: 25px 0 20px;
+    margin: auto;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .site-navigation {
@@ -14,6 +21,11 @@
   width: 400px;
   font-size: 16px;
   line-height: 19px;
+
+  &__item {
+    padding: 25px 0;
+    margin-right: 35px;
+  }
 }
 
 .user-navigation {
@@ -21,22 +33,15 @@
   justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 300px;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &__item {
+    padding: 20px 0;
+    margin-left: 35px;
+  }
 }
 
-.site-navigation__item {
-  padding: 25px 0;
-  margin-right: 35px;
-}
 
-.user-navigation__item {
-  padding: 20px 0;
-  margin-left: 35px;
-}
-
-.main-header-nav-wrapper {
-  display: flex;
-  justify-content: flex-start;
-}
