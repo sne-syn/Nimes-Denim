@@ -6,9 +6,9 @@ import { ReactComponent as Logo } from './img/Nîmes.svg';
 const Header = () => {
   return (
     <header className='main-header'>
-      <nav class='main-header__nav'>
+      <nav className='main-header__nav'>
         <div className='wrapper'>
-          <div class="main-header__nav-wrapper">
+          <div className="main-header__nav-wrapper">
             <ul className='site-navigation'>
               <li className='site-navigation__item'>
                 <BrowserRouter>
@@ -17,17 +17,17 @@ const Header = () => {
               </li>
               <li className='site-navigation__item'>
                 <BrowserRouter>
-                  <Link className='link-item' to='/contacts'>Contacts</Link>
+                  <Link className='link-item' to='/'>Contacts</Link>
                 </BrowserRouter>
               </li>
               <li className='site-navigation__item'>
                 <BrowserRouter>
-                  <Link className='link-item' to='/news'>News</Link>
+                  <Link className='link-item' to='/'>News</Link>
                 </BrowserRouter>
               </li>
             </ul>
             <BrowserRouter>
-              <Link className='main-header__logo'>
+              <Link className='main-header__logo' to='/'>
                 <Logo width='75' height='20' alt='Logo' />
               </Link>
             </BrowserRouter>

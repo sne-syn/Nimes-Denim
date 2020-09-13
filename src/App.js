@@ -5,17 +5,21 @@ import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shoppage/shoppage.component';
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
+import SignInUpPage from './pages/signpage/signInUpPage.component';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route path='/shop' component={ShopPage} />
-        </Switch>
-      </BrowserRouter>
+    <div className='content'>
+      <div>
+        <Header />
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route path='/shop' component={ShopPage} />
+            <Route path='/signin' component={SignInUpPage} />
+          </Switch>
+        </BrowserRouter>
+      </div>
       <Footer />
     </div>
   )

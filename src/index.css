@@ -1,4 +1,10 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
+  height: inherit;
   margin: 0;
   padding: 0;
   font-family: "Work Sans", "Arial", sans-serif;
@@ -10,10 +16,6 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-html {
-  box-sizing: border-box;
 }
 
 *,
@@ -44,7 +46,7 @@ dl {
 }
 
 ul,
-ol{
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -81,4 +83,14 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#root {
+  height: inherit;
+}
+
+.content {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
