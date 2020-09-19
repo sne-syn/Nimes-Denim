@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import './header.styles.scss';
 import { ReactComponent as Logo } from './img/Nîmes.svg';
+import {auth} from '../../firebase/firebase.utils'
 
-const Header = () => {
+const Header = ({currentUser}) => {
   return (
     <header className='main-header'>
       <nav className='main-header__nav'>
@@ -37,6 +38,16 @@ const Header = () => {
               </li>
               <li className='user-navigation__item'>
                 <div className='link-item'>Search</div>
+              </li>
+              <li className='user-navigation__item'>
+              {
+                currentUser ?
+                  <div className='option' onClick={() => auth.signOut()}>Sign Out</div>
+                  :
+                  <BrowserRouter>
+                    <Link className='option' to='/signin'>Sign In</Link>
+                  </BrowserRouter>
+              }
               </li>
             </ul>
           </div>

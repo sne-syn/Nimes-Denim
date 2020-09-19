@@ -11,4 +11,20 @@
   line-height: 19px;
   color: #ffffff;
   background-color: #151c22;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #151c22;
+    cursor: pointer;
+  }
+
+  &--google-sign-in {
+    background-color: #4285f4;
+    color: white;
+
+    &:hover {
+      background-color: #357ae8;
+      color: #ffffff;
+    }
+  }
 }
